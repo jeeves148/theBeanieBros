@@ -28,66 +28,68 @@ body
     font-weight:var(--normalFontWeight);
 }
 
-
 #navbar
 {
+    justify-content: left;
+    display:flex;
+    align-items: stretch;
     width:100%;
     background-color: white;
-    position: -webkit-sticky;
-    position: sticky;
+    position: fixed;
     top: 0;
 }
 /* Navbar links */
-
 #navbar a 
 {
-    float: right;
+    
     display: block;
     color: var(--black);
     text-align: center;
-    padding: 14px 24px 14px 24px;
     text-decoration: none;
     overflow: hidden;
-
-    background-color:#4cc9f0ff;
         
-    font-size: 1em;
+    padding: 14px;
+    font-size: var(--titleSize);
     font-family:var(--normalFontFamily);
     font-weight:var(--titleFontWeight);
     
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0;
+  
+  
+}
+
+#navbar .active{
+    background-image: linear-gradient(#7209b7ff, #3a0ca3ff, #4361eeff, #4cc9f0ff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;         
 }
 
 #navbar a:hover
 {
-    background-color:var(--trypan-blue);
+    background-image: linear-gradient(#f72585ff ,#4361eeff );
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;     
 }
 
 #title
 {
+    flex-grow: 8;
     float:left;
-    color: var(--black);
-    text-align: center;
+    text-align: left;
     padding: 14px;
     text-decoration: none;
-    background-image: linear-gradient(315deg, #f72585ff, #7209b7ff, #3a0ca3ff, #4361eeff, #4cc9f0ff);
+    background-image: linear-gradient(#7209b7ff, #3a0ca3ff, #4361eeff, #4cc9f0ff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;    
     
     font-size: var(--titleSize);
     font-family:var(--normalFontFamily);
     font-weight:var(--titleFontWeight);
 
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0;
 }
 
-#title:hover
-{
-    animation: tada; /* referring directly to the animation's @keyframe declaration */
-    animation-duration: 2s; /* don't forget to set a duration! */
-}
 
 /*END OF NAVBAR*/
 
