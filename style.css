@@ -28,6 +28,18 @@ body
     font-weight:var(--normalFontWeight);
 }
 
+/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+#navbarSpace
+{
+    justify-content: left;
+    display:flex;
+    align-items: stretch;
+    width:100%;
+    background-color: white;
+    position: relative;
+    top: 0;
+}
+
 #navbar
 {
     justify-content: left;
@@ -90,9 +102,7 @@ body
 
 }
 
-
 /*END OF NAVBAR*/
-
 #box
 {
     height: 3000px;
@@ -109,6 +119,9 @@ h2
 {
     font-size: var(--titleSize);
     font-family: var(--normalFontFamily);
+
+    color: var(--black);
+    
 }
 
 footer{
