@@ -1,0 +1,39 @@
+:root
+{
+    --normalFontFamily: 'Poppins', sans-serif;    
+    --normalFontWeight:400;
+    --titleFontWeight:900;
+    --titleSize:2em;
+    --black:rgb(0, 0, 0);
+    
+    --flickr-pink: rgba(247, 37, 132, 0.5);
+    --purple: rgba(113, 9, 183, 0.459);
+    --trypan-blue: rgba(57, 12, 163, 0.459);
+    --ultramarine-blue: rgba(67, 98, 238, 0.5);
+    --vivid-sky-blue: rgba(76, 202, 240, 0.5);
+}
+
+div.full
+{
+    width:100%;
+    display: flex;
+    flex-direction: row;
+}
+
+div.half
+{
+    width:50%;
+    background-color: var(--flickr-pink);
+}
+
+div.half:nth-child(even)
+{
+    width:50%;
+    background-color: var(--flickr-pink);
+}
+
+div.half:nth-child(odd)
+{
+    width:50%;
+    background-color: var(--vivid-sky-blue);
+}
