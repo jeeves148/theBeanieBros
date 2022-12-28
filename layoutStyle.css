@@ -11,6 +11,9 @@
     --trypan-blue: rgba(57, 12, 163, 0.459);
     --ultramarine-blue: rgba(67, 98, 238, 0.5);
     --vivid-sky-blue: rgba(76, 202, 240, 0.5);
+
+    --flicker-pink-grad: linear-gradient(0deg,#fff, #f72585ff);
+    $gradient-top: linear-gradient(0deg, #f72585ff, #4cc9f0ff);
 }
 
 div.full
@@ -23,13 +26,13 @@ div.full
 div.half
 {
     width:50%;
-    background-color: var(--flickr-pink);
+    background-image: var(--flicker-pink-grad);
 }
 
 div.half:nth-child(even)
 {
     width:50%;
-    background-color: var(--flickr-pink);
+    background-image: var(--flickr-pink-grad);
 }
 
 div.half:nth-child(odd)
